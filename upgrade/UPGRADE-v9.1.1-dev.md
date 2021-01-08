@@ -42,3 +42,6 @@ There you can find links to upgrade notes for other versions too.
 
 - update phpstan/phpstan to the latest version ([#2241](https://github.com/shopsys/shopsys/pull/2241))
   - see #project-base-diff to update your project
+  
+- initialize CKEditor after the click into appropriate field ([#2177](https://github.com/shopsys/shopsys/pull/2177))
+    - see #project-base-diff to update your project
