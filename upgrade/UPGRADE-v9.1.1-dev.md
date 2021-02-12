@@ -39,3 +39,7 @@ There you can find links to upgrade notes for other versions too.
 - Frontend API: correctly inherited base type in `AdvertCodeDecorator`, `AdvertImageDecorator`, `ProductPriceDecorator` types ([#2222](https://github.com/shopsys/shopsys/pull/2222))
   - if you extended `Advert` type, you can remove duplicate definitions in `AdvertCode` and `AdvertImage` types
   - if you extended `Price` type, you can remove duplicate definitions in `ProductPrice` type
+
+- allow multiple elasticsearch hosts ([#2240](https://github.com/shopsys/shopsys/pull/2240))
+    - now it's possible to set multiple elasticsearch hosts like `'["elasticsearch:9200", "elasticsearch2:9200"]'`
+    - `Elasticsearch\ClientBuilder` is now created with a different factory, you may want to check your overridden service definition (see PR for details)
